@@ -23,20 +23,20 @@
       <div class="form">
           <div class="card space icon-relative">
             <label class="label">Card holder:</label>
-            <input name="card_ho" type="text" class="input" placeholder="Steven Naismith">
+            <input name="card_ho" type="text" class="input" placeholder="Stephen Naismith" required>
           </div>
           <div class="card space icon-relative">
             <label class="label">Card number:</label>
-            <input name="card_no" type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="1234 5678 9012 3456">
+            <input name="card_no" type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="1234 5678 9012 3456" required>
           </div>
           <div class="card-grp space">
             <div class="card-item icon-relative">
               <label class="label">Expiry date:</label>
-              <input name="card_ex"type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00">
+              <input name="card_ex"type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00" required>
             </div>
             <div class="card-item icon-relative">
               <label class="label">CVC:</label>
-              <input name="cvv" type="text" class="input" data-mask="000" placeholder="000">
+              <input name="cvv" type="text" class="input" data-mask="000" placeholder="000" required>
             </div>
         </div>
         <input type="submit" class="btn" value="Pay"> 

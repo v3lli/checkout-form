@@ -15,5 +15,14 @@ if(isset($_POST["Pay"]))
         'Reply-To' => 'webmaster@example.com',
         'X-Mailer' => 'PHP/' . phpversion()
     );
-    mail($to, $subject, $message, $headers);
+    try {
+       if(!mail($to, $subject, $message, $headers)){
+         throw new Exception("Failed");
+       } 
+      } catch (Exception $e) {
+        echo $e->getMessage();
+        die();
+      } finally{
+        mail($to, $subject, $message, $headers);
+      }
 }
