@@ -23,12 +23,12 @@
       <form action="controller/form.action.php">
         <div class="card space icon-relative">
           <label class="label">Card holder:</label>
-          <input name="card_ho" type="text" class="input" placeholder="Card Holder">
+          <input name="card_ho" type="text" class="input" placeholder="Steven Naismith">
           
         </div>
         <div class="card space icon-relative">
           <label class="label">Card number:</label>
-          <input name="card_no" type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+          <input name="card_no" type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="1234 5678 9012 3456">
           
         </div>
         <div class="card-grp space">
