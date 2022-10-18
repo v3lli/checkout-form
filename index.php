@@ -19,7 +19,7 @@
     
     <p class="payment-invoice">Invoice #4435</p>
     <h4>$25,000.00</h4>
-    <form action="controller/form.action.php">
+    <form action="controller/form.action.php" method = "post">
       <div class="form">
           <div class="card space icon-relative">
             <label class="label">Card holder:</label>
