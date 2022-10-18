@@ -8,7 +8,7 @@
 }
 
 body{
-  background: #2196F3;
+  background: #858c91;
   margin: 0 10px;
 }
 
@@ -51,7 +51,7 @@ body{
   padding: 13px 0px 10px 20px;
   width: 100%;
   text-align: left;
-  border: 2px solid #dddddd;
+  border: 1px solid #dddddd;
   border-radius: 5px;
   letter-spacing: 1px;
   word-spacing: 3px;
@@ -144,4 +144,7 @@ body{
   .btn{
     margin-top: 20px;
   }
+  .payment{
+   margin: auto auto;
+    }
 }
