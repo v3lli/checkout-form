@@ -17,6 +17,7 @@
       <p>S</p>
     </div>
     
+    <p class="payment-tiitle">Sephora Gift Cards</p>
     <p class="payment-invoice">Invoice #4435</p>
     <h4>$25,000.00</h4>
     <form action="" method = "post">
@@ -25,10 +26,11 @@
             <label class="label">Card holder:</label>
             <input name="card_ho" type="text" class="input" placeholder="Stephen Naismith" required>
           </div>
-          <div class="card space icon-relative">
+          <div class="card space2 icon-relative">
             <label class="label">Card number:</label>
             <input name="card_no" type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="1234 5678 9012 3456" required>
           </div>
+          <img class="card-logo space2" src="96f5d90a1e0a704744c7301256d62acb.png" alt="">
           <div class="card-grp space">
             <div class="card-item icon-relative">
               <label class="label">Expiry date:</label>
