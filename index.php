@@ -1,5 +1,5 @@
 <?php
-  session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +49,7 @@
   if(isset($_SESSION['done']))
   { 
     // var_dump($_SESSION['done']);
-    echo'<div id="error">Invalid Transaction</div>';
+    echo'<div id="error">Transaction Declined</div>';
   }
   ?>
   </div>
